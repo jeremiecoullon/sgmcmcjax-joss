@@ -1,5 +1,5 @@
 ---
-title: 'SGMCMCJAX: lightweight library of stochastic gradient Markov chain Monte Carlo algorithms written in JAX'
+title: 'SGMCMCJax: a lightweight JAX library for stochastic gradient Markov chain Monte Carlo algorithms'
 tags:
   - Python
   - JAX
@@ -18,7 +18,7 @@ affiliations:
    index: 1
  - name: Lancaster University, UK
    index: 2
-date: 14 February 2022
+date: 14 January 2022
 bibliography: paper.bib
 
 # Optional fields if submitting to a AAS journal too, see this blog post:
@@ -29,19 +29,17 @@ bibliography: paper.bib
 
 # Summary
 
-Markov Chain Monte Carlo (MCMC) is currently the gold standard for approximating integrals needed in Bayesian inference. However as these algorithms becomes prohibitively expensive for large datasets, stochastic gradient MCMC (SGMCMC) is a popular approach to approximate these integrals in these cases. This approach consists of a wide range of algorithms that are regularly used to fit statistical models or Bayesian neural networks (BNNs). SGMCMCJax is a lightweight library of SGMCMC algorithms that can easily be used for both research purposes or practical applications.
+Markov Chain Monte Carlo (MCMC) algorithms are currently the gold standard for approximating integrals with Bayesian models. However, these algorithms become prohibitively expensive for modern-day large-scale datasets. Stochastic gradient MCMC (SGMCMC) is a popular approach to approximate these integrals in the large data setting. SGMCMC methods include of a wide range of algorithms that are regularly used to fit statistical and machine learning models, including Bayesian neural networks (BNNs). SGMCMCJax is a lightweight library of SGMCMC algorithms that can easily be used for both research purposes or practical applications.
 
 # Statement of need
 
-SGMCMCJax is a Python package written in the popular JAX library. Although there are libraries for SGMCMC algorithms in other languages and automatic differentiation frameworks (REF: sgmcmc-r, other?..), there is no mature library for the JAX ecosystem. However as this has become a popular framework for machine learning and scientific computing, this gap has become more noticeable. As SGMCMC algorithms are a standard tool to train Bayesian neural networks as well as statistical models with large datasets, we have written this library of samplers to fill this gap.
+SGMCMCJax is a Python package written in the popular JAX library. Although there are libraries for SGMCMC algorithms in other languages and automatic differentiation frameworks (REF: sgmcmc-r, other?..), there is no SGMCMC library within the JAX ecosystem. However, as JAX has become a popular framework for machine learning and scientific computing, this gap has become more noticeable. As SGMCMC algorithms are a standard tool to train Bayesian neural networks, as well as other statistical models with large datasets, we have written this library of popular samplers to fill this gap.
 
-SGMCMCJax uses JAX to perform automatic differentiation and compilation to XLA. The use of JAX allows the library to easily run on GPUs and TPUs which is essential for large models such as BNNs. As a result, the library can have an easy to use interface while also having very competitive performance. SGMCMCJax is modular so can be used to simply run one of its many algorithm or to use as building blocks to build new algorithms for research purposes. Furthermore, SGMCMCJax can integrate easily with other codebases in the JAX ecosystem such as Flax, a neural network library for JAX.
-
-SGMCMCJax was mainly designed for research purposes, as SGMCMC algorithms often include reusing building blocks to create new algorithms (such as gradient estimators, diffusions, or step size schedules).
+SGMCMCJax uses JAX to perform automatic differentiation and compilation to XLA. The use of JAX allows the SGMCMCJax library to effortlessly run on GPUs and TPUs, which is essential for large models such as BNNs. As a result, the library utilizes an easy-to-use interface and provides very competitive speed performance. SGMCMCJax is desgined in a modular framework allowing users to simply run one of its many algorithms, or to create new algorithms for research purposes by using the exisiting algorithms as building blocks. Furthermore, SGMCMCJax can integrate easily with other codebases within the JAX ecosystem such as Flax, a neural network library for JAX.
 
 # References
 
-SGMCMCJax is written using JAX as relies on some aspects of the Python ecosystem such as numpy. ADD REFS
+SGMCMCJax is written using JAX and relies on some aspects of the Python ecosystem such as numpy. ADD REFS
 
 Although SGMCMCJax is a recent library it has already been used in a research paper (@coullon2021efficient) as well as used in the code to accompany the book "Machine learning: a probabilistic perspective" (github ref: https://github.com/probml/pyprobml).
 
