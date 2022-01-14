@@ -29,7 +29,7 @@ bibliography: paper.bib
 
 # Summary
 
-Markov Chain Monte Carlo (MCMC) is currently the gold standard for approximating integrals needed in Bayesian inference. However as these algorithms becomes prohibitively expensive for large datasets, stochastic gradient MCMC (SGMCMC)[@nemeth2021stochastic] is a popular approach to approximate these integrals in these cases. This approach consists of a wide range of algorithms that are regularly used to fit statistical models or Bayesian neural networks (BNNs). SGMCMCJax is a lightweight library of SGMCMC algorithms that can easily be used for both research purposes or practical applications.
+In Bayesian inference the _posterior distribution_ is the probability distribution over the model parameters resulting from the prior distribution and the likelihood. One can compute integrals over this distribution to obtain quantities of interest such as the posterior mean or credible regions. However as these integrals are often intractable for problems of interest, numerical methods must be used to approximate that. Markov Chain Monte Carlo (MCMC) is currently the gold standard for approximating integrals needed in Bayesian inference. However as these algorithms becomes prohibitively expensive for large datasets, stochastic gradient MCMC (SGMCMC)[@nemeth2021stochastic] is a popular approach to approximate these integrals in these cases. This class of scalable algorithms uses data subsampling techniques to approximate gradient based sampling algorithms. Innovations in these algorithms includes using novel gradient estimation techniques, designing more efficient diffusions, and finding more stable numerical discretisations to the diffusions. This results in a wide range of algorithms that are regularly used to fit statistical models or Bayesian neural networks (BNNs). SGMCMCJax is a lightweight library that implements many SGMCMC algorithms in the literature that can easily be used for both research purposes or practical applications.
 
 # Statement of need
 
@@ -42,7 +42,7 @@ SGMCMCJax uses JAX to perform automatic differentiation and compilation to XLA. 
 
 SGMCMCJax is written using JAX (@jax2018github) and relies on some aspects of the Python ecosystem such as numpy (@harris2020array).
 
-Although SGMCMCJax is a recent library it has already been used in a research paper (@coullon2021efficient) as well as used in the [code to accompany](https://github.com/probml/pyprobml) the book "Machine learning: a probabilistic perspective".
+Although SGMCMCJax is a recent library it has already been used in a research paper (@coullon2021efficient) as well as used in the [code to accompany](https://github.com/probml/pyprobml) the book "Machine learning: a probabilistic perspective" (@Murphy2012).
 
 
 # Acknowledgements
