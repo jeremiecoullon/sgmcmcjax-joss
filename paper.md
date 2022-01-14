@@ -38,7 +38,7 @@ SGMCMCJax is a Python package written in the popular (JAX library)[@jax2018githu
 
 SGMCMCJax uses JAX to perform automatic differentiation and compilation to XLA. The use of JAX allows the SGMCMCJax library to effortlessly run on GPUs and TPUs, which is essential for large models such as BNNs. As a result, the library utilizes an easy-to-use interface and provides very competitive speed performance. SGMCMCJax is desgined in a modular framework allowing users to simply run one of its many algorithms, or to create new algorithms for research purposes by using the exisiting algorithms as building blocks. Furthermore, SGMCMCJax can integrate easily with other codebases within the JAX ecosystem such as Flax, a neural network library for JAX.
 
-# References
+# Software requirements and external usage
 
 SGMCMCJax is written using JAX (@jax2018github) and relies on some aspects of the Python ecosystem such as numpy (@harris2020array).
 
