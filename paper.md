@@ -43,14 +43,14 @@ SGMCMCJax was mainly designed for research purposes, as SGMCMC algorithms often 
 
 SGMCMCJax is written using JAX as relies on some aspects of the Python ecosystem such as numpy. ADD REFS
 
-Although SGMCMCJax is a recent library it has already been used in a research paper (REF) as well as used in the code to accompany the book "Machine learning: a probabilistic perspective" (github ref: https://github.com/probml/pyprobml).
+Although SGMCMCJax is a recent library it has already been used in a research paper (@coullon2021efficient) as well as used in the code to accompany the book "Machine learning: a probabilistic perspective" (github ref: https://github.com/probml/pyprobml).
 
 
 # Acknowledgements
 
 The design of the codebase was inspired inspired by JAX's optimizers module as well as the Blackjax library of MCMC samplers. We give special thanks to Kevin Murphy, Remi Louf, Colin Carol, Charles Matthews, and Sharad Vikram for code contributions and insightful discussions.
 
-# Citations
+<!-- # Citations
 
 Citations to entries in paper.bib should be in
 [rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
@@ -62,20 +62,8 @@ citation) then you can do it with the example BibTeX entry below for @fidgit.
 For a quick reference, the following citation commands can be used:
 - `@author:2001`  ->  "Author et al. (2001)"
 - `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
+- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)" -->
 
-# Figures
 
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% }
-
-# Acknowledgements
-
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
 
 # References
