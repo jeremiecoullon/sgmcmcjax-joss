@@ -40,9 +40,9 @@ SGMCMCJax uses JAX to perform automatic differentiation and compilation to XLA. 
 
 # References
 
-SGMCMCJax is written using JAX and relies on some aspects of the Python ecosystem such as numpy. ADD REFS
+SGMCMCJax is written using JAX (@jax2018github) and relies on some aspects of the Python ecosystem such as numpy (@harris2020array).
 
-Although SGMCMCJax is a recent library it has already been used in a research paper (@coullon2021efficient) as well as used in the code to accompany the book "Machine learning: a probabilistic perspective" (github ref: https://github.com/probml/pyprobml).
+Although SGMCMCJax is a recent library it has already been used in a research paper (@coullon2021efficient) as well as used in the [code to accompany](https://github.com/probml/pyprobml) the book "Machine learning: a probabilistic perspective".
 
 
 # Acknowledgements
